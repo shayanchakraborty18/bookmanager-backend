@@ -9,7 +9,8 @@ const app = express();
 
 // Cors
 app.use(cors({
-  origin: "*"
+  origin: ["https://bookmanager-frontend-nine.vercel.app", "http://localhost:3000"],
+  credentials: true,
 }));
 app.use(express.json());
 
